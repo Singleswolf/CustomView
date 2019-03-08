@@ -1,7 +1,4 @@
 package com.zyong.library.widget;
-/**
- * Created by yong on 2018/2/9.
- */
 
 import android.animation.ValueAnimator;
 import android.content.Context;
@@ -21,12 +18,8 @@ import android.view.animation.LinearInterpolator;
 import com.zyong.library.R;
 import com.zyong.library.utils.MiscUtil;
 
-
 /**
- * @company: 爱华盈通
- * @author: ZengYong
- * @date: 2018/2/9
- * @description
+ * Created by yong on 2018/2/9.
  */
 public class ArcRotate extends View {
 

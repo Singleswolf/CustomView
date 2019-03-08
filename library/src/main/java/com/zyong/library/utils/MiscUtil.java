@@ -5,7 +5,7 @@ import android.graphics.Paint;
 import android.view.View;
 
 /**
- * Created by littlejie on 2017/2/22.
+ * Created by yong on 2017/2/22.
  */
 
 public class MiscUtil {

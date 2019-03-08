@@ -22,13 +22,6 @@ import java.util.List;
 /**
  * Created by yong on 2018/2/11.
  */
-
-/**
- * @company: 爱华盈通
- * @author: ZengYong
- * @date: 2018/2/11
- * @description
- */
 public class LoadingView extends View {
 
     private Paint mPaint;
