@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--ConfigItemView start-->
+    <declare-styleable name="ItemView">
+        <attr name="left_icon" format="reference"/>
+        <attr name="left_icon_visible" format="boolean"/>
+        <attr name="left_txt" format="string"/>
+        <attr name="left_txt_size" format="dimension"/>
+        <attr name="left_txt_color" format="color"/>
+        <attr name="right_txt" format="string"/>
+        <attr name="right_txt_size" format="dimension"/>
+        <attr name="right_txt_color" format="color"/>
+        <attr name="right_text_visible" format="boolean"/>
+        <attr name="right_arrow_visible" format="boolean"/>
+        <attr name="right_arrow" format="reference"/>
+        <attr name="divide_line" format="boolean"/>
+        <attr name="right_style">
+            <enum name="NORMAL" value="0"/>
+            <enum name="SWITCH" value="1"/>
+        </attr>
+    </declare-styleable>
+    <!--ConfigItemView end-->
+</resources>
