@@ -27,7 +27,7 @@ public class MiscUtil {
         } else if (specMode == View.MeasureSpec.AT_MOST) {
             result = Math.min(result, specSize);
         }
-        return result;
+        return View.MeasureSpec.makeMeasureSpec(result, specMode);
     }
 
     /**

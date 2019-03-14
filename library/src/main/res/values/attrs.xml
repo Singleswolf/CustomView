@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!--ArcRotate start-->
-    <attr name="animationDur" format="float"/>
+    <attr name="animationDur" format="integer"/>
     <declare-styleable name="ArcRotate">
         <attr name="startAngle" format="float"/>
         <attr name="sweepAngle" format="float"/>

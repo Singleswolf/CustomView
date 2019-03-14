@@ -9,28 +9,49 @@
     tools:layout_editor_absoluteY="81dp">
 
     <com.zyong.library.widget.ArcRotate
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="16dp"
-        app:animationDur="4000"
-        app:arcColor="@color/colorPrimary"
-        app:arcWidth="5dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:startAngle="0"
-        app:sweepAngle="180"/>
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:layout_marginTop="16dp"
+    app:animationDur="4000"
+    app:arcColor="@color/colorPrimary"
+    app:arcWidth="5dp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:startAngle="0"
+    app:sweepAngle="180"/>
 
     <com.zyong.library.widget.LoadingView
-        android:layout_width="200dp"
-        android:layout_height="53dp"
-        android:layout_marginTop="236dp"
-        app:animationDur="800"
-        app:circleNum="9"
-        app:interval="5dp"
+    android:layout_width="200dp"
+    android:layout_height="53dp"
+    android:layout_marginTop="236dp"
+    app:animationDur="800"
+    app:circleNum="9"
+    app:interval="5dp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:radius="6dp"/>
+
+    <com.zyong.library.widget.ItemView
+        android:id="@+id/itemview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="344dp"
+        android:background="@android:color/darker_gray"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:radius="6dp"/>
+        app:left_icon="@drawable/item_user"
+        app:left_txt="用户名"
+        app:left_txt_size="18dp"
+        app:left_txt_color="@android:color/holo_blue_dark"
+        app:right_txt="张三"
+        app:right_txt_color="@color/colorPrimaryDark"
+        app:right_txt_size="16sp"
+        app:divide_line="true"
+        app:right_arrow="@drawable/item_arrow"
+        app:right_style="NORMAL"/>
+
 
 </android.support.constraint.ConstraintLayout>

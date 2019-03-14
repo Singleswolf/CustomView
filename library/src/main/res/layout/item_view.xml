@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_left_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/iv_left_icon"
+        android:gravity="center"/>
+
+    <ImageView
+        android:id="@+id/iv_right_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/item_arrow"/>
+
+    <TextView
+        android:id="@+id/tv_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="5dp"
+        android:layout_toStartOf="@+id/iv_right_arrow"
+        android:gravity="center"/>
+
+    <Switch
+        android:id="@+id/switch_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/item_switch_bg"
+        android:thumb="@drawable/item_switch_click"
+        android:track="@android:color/transparent"
+        android:visibility="gone"/>
+
+    <View
+        android:id="@+id/divide"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/darker_gray"/>
+</RelativeLayout>
