@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--ArcRotate start-->
+    <declare-styleable name="ArcRotate">
+        <attr name="startAngle" format="float"/>
+        <attr name="sweepAngle" format="float"/>
+        <!-- 圆弧宽度 -->
+        <attr name="arcWidth" format="dimension"/>
+        <attr name="arcColor" format="color|reference"/>
+        <attr name="animDur" format="integer"/>
+    </declare-styleable>
+    <!--ArcRotate end-->
+</resources>

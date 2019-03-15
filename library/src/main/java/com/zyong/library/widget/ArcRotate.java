@@ -62,7 +62,7 @@ public class ArcRotate extends View {
 
     private void initAttrs(AttributeSet attrs) {
         TypedArray type = mContext.obtainStyledAttributes(attrs, R.styleable.ArcRotate);
-        animationDur = type.getInt(R.styleable.ArcRotate_animationDur, 4000);
+        animationDur = type.getInt(R.styleable.ArcRotate_animDur, 4000);
         arcWidth = type.getDimension(R.styleable.ArcRotate_arcWidth, 10);
         startAngle = type.getFloat(R.styleable.ArcRotate_startAngle, 0);
         sweepAngle = type.getFloat(R.styleable.ArcRotate_sweepAngle, 180);

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--LoadingView start-->
+    <declare-styleable name="LoadingView">
+        <!--间隔-->
+        <attr name="interval" format="dimension"/>
+        <attr name="circleNum" format="integer"/>
+        <attr name="radius" format="dimension"/>
+        <attr name="animationDur" format="integer"/>
+    </declare-styleable>
+    <!--LoadingView end-->
+</resources>
