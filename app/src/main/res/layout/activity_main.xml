@@ -50,7 +50,7 @@
         app:right_txt_color="@color/colorPrimaryDark"
         app:right_txt_size="16sp"
         app:divide_line="true"
-        app:right_arrow="@drawable/item_arrow"
+        app:right_icon="@drawable/item_arrow"
         app:right_style="NORMAL"/>
 
 
