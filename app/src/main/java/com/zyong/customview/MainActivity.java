@@ -16,16 +16,10 @@ public class MainActivity extends AppCompatActivity {
 
         ItemView itemView = (ItemView) findViewById(R.id.itemview);
         itemView.setDivideVisible(false);
-        itemView.setOnItemViewClickListener(new ItemView.OnItemViewClickListener() {
+        itemView.setListener(new ItemView.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(MainActivity.this, "click item view", Toast.LENGTH_SHORT).show();
-            }
-        });
-        itemView.setOnCheckedChangedListener(new ItemView.OnCheckedChangedListener() {
-            @Override
-            public void onCheckedChanged(boolean checked) {
-                Toast.makeText(MainActivity.this, "click item checked " + checked, Toast.LENGTH_SHORT).show();
             }
         });
     }
