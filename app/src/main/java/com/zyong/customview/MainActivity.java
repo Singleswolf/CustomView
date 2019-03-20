@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.zyong.library.widget.ItemView;
+import com.zyong.library.widget.TitleView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,6 +21,19 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(MainActivity.this, "click item view", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        TitleView titleView = (TitleView) findViewById(R.id.title_view);
+        titleView.setListener(new TitleView.OnClickListener() {
+            @Override
+            public void onClickLeft() {
+                Toast.makeText(MainActivity.this, "click left", Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onClickRight() {
+                Toast.makeText(MainActivity.this, "click right", Toast.LENGTH_SHORT).show();
             }
         });
     }

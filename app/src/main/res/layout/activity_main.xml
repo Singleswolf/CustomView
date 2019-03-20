@@ -8,50 +8,71 @@
     tools:context="com.zyong.customview.MainActivity"
     tools:layout_editor_absoluteY="81dp">
 
+    <com.zyong.library.widget.TitleView
+        android:id="@+id/title_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/holo_blue_dark"
+        app:left_text="返回"
+        app:left_text_drawable_left="@drawable/back_normal"
+        app:right_image_two="@drawable/icon_crop_rotate"
+        app:right_text="更多"
+        app:right_text_drawable_right="@drawable/bar_button_right"
+        app:small_text_size="15sp"
+        app:title_name="标题"
+        app:title_text_color="@android:color/white"
+        app:title_text_size="20sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
     <com.zyong.library.widget.ArcRotate
-    android:layout_width="200dp"
-    android:layout_height="200dp"
-    android:layout_marginTop="16dp"
-    app:animationDur="4000"
-    app:arcColor="@color/colorPrimary"
-    app:arcWidth="5dp"
-    app:layout_constraintLeft_toLeftOf="parent"
-    app:layout_constraintRight_toRightOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    app:startAngle="0"
-    app:sweepAngle="180"/>
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="80dp"
+        app:animationDur="4000"
+        app:arcColor="@color/colorPrimary"
+        app:arcWidth="5dp"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:startAngle="0"
+        app:sweepAngle="180" />
 
     <com.zyong.library.widget.LoadingView
-    android:layout_width="200dp"
-    android:layout_height="53dp"
-    android:layout_marginTop="236dp"
-    app:animationDur="800"
-    app:circleNum="9"
-    app:interval="5dp"
-    app:layout_constraintLeft_toLeftOf="parent"
-    app:layout_constraintRight_toRightOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    app:radius="6dp"/>
+        android:layout_width="200dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="304dp"
+        app:animationDur="800"
+        app:circleNum="9"
+        app:interval="5dp"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:radius="6dp" />
 
     <com.zyong.library.widget.ItemView
         android:id="@+id/itemview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="344dp"
+        android:layout_marginTop="384dp"
         android:background="@android:color/darker_gray"
+        app:divide_line="true"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:left_icon="@drawable/item_user"
         app:left_txt="用户名"
-        app:left_txt_size="18dp"
         app:left_txt_color="@android:color/holo_blue_dark"
+        app:left_txt_size="18dp"
+        app:right_icon="@drawable/item_arrow"
+        app:right_style="NORMAL"
         app:right_txt="张三"
         app:right_txt_color="@color/colorPrimaryDark"
-        app:right_txt_size="16sp"
-        app:divide_line="true"
-        app:right_icon="@drawable/item_arrow"
-        app:right_style="NORMAL"/>
+        app:right_txt_size="16sp" />
 
 
 </android.support.constraint.ConstraintLayout>
