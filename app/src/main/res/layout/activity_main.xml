@@ -27,6 +27,7 @@
         tools:layout_editor_absoluteY="0dp" />
 
     <com.zyong.library.widget.ArcRotate
+        android:id="@+id/arcRotate"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_marginTop="80dp"
@@ -41,6 +42,7 @@
         app:sweepAngle="180" />
 
     <com.zyong.library.widget.LoadingView
+        android:id="@+id/loadingView"
         android:layout_width="200dp"
         android:layout_height="53dp"
         android:layout_marginTop="304dp"
@@ -74,5 +76,12 @@
         app:right_txt_color="@color/colorPrimaryDark"
         app:right_txt_size="16sp" />
 
+    <com.zyong.library.widget.AutoPollRecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="452dp"
+        app:layout_constraintTop_toTopOf="@+id/title_view"
+        tools:layout_editor_absoluteX="31dp" />
 
 </android.support.constraint.ConstraintLayout>
