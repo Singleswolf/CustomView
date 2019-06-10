@@ -5,10 +5,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
 
+import com.zyong.library.widget.AutoPollRecyclerView;
 import com.zyong.library.widget.ItemView;
 import com.zyong.library.widget.TitleView;
 
 public class MainActivity extends AppCompatActivity {
+
+    private AutoPollRecyclerView recyclerView;
+    private MyAdapter mAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,5 +40,13 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "click right", Toast.LENGTH_SHORT).show();
             }
         });
+
+        recyclerView = findViewById(R.id.recyclerview);
+        mAdapter = new MyAdapter();
+        recyclerView.setAdapter(mAdapter);
+        AutoPollRecyclerView.LayoutManager layoutManager = new AutoPollRecyclerView.LayoutManager(this);
+        layoutManager.setPollEnable(true);
+        recyclerView.setLayoutManager(layoutManager);
+        recyclerView.start();
     }
 }
