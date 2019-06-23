@@ -15,7 +15,7 @@ import java.lang.ref.WeakReference;
 /**
  * @Description: Created by yong on 2019/6/10 14:38.
  */
-public class AutoPollRecyclerView extends RecyclerView {
+public class AutoPollRecyclerView extends BaseRecyclerView {
     private static final long TIME_AUTO_POLL = 16;
     AutoPollTask autoPollTask;
     private boolean running; //标示是否正在自动轮询

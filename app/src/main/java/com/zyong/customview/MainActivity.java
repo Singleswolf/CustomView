@@ -2,10 +2,12 @@ package com.zyong.customview;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Toast;
 
 import com.zyong.library.widget.AutoPollRecyclerView;
+import com.zyong.library.widget.BaseRecyclerView;
 import com.zyong.library.widget.ItemView;
 import com.zyong.library.widget.TitleView;
 
@@ -48,5 +50,11 @@ public class MainActivity extends AppCompatActivity {
         layoutManager.setPollEnable(true);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.start();
+        recyclerView.setOnItemClickListener(new BaseRecyclerView.OnItemClickListener() {
+            @Override
+            public void onItemClick(View item, int adapterPosition, RecyclerView.Adapter adapter) {
+                Toast.makeText(MainActivity.this, "item = " +adapterPosition, Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 }
