@@ -26,7 +26,7 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp" />
 
-    <com.zyong.library.widget.ArcRotate
+    <com.zyong.library.widget.CircleImageView
         android:id="@+id/arcRotate"
         android:layout_width="200dp"
         android:layout_height="200dp"
@@ -39,7 +39,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:startAngle="0"
-        app:sweepAngle="180" />
+        app:sweepAngle="90" />
 
     <com.zyong.library.widget.LoadingView
         android:id="@+id/loadingView"

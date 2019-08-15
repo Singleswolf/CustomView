@@ -42,7 +42,7 @@ public class MyAdapter extends RecyclerView.Adapter {
 
     private void initData(){
         String[] str = new String[]{"AAAAAAA","BBBBBBBBB","CCCCCCCCCC"};
-        for (int i = 0; i < 9; i++) {
+        for (int i = 0; i < 1; i++) {
             data.add(i, str[i % 3]);
 
         }
