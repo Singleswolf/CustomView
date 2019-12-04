@@ -6,11 +6,12 @@ import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.DecelerateInterpolator;
+
+import androidx.annotation.Nullable;
 
 import com.zyong.library.R;
 import com.zyong.library.utils.MiscUtil;
@@ -120,11 +121,11 @@ public class LoadingView extends View {
         valueAnimator.start();
     }
 
-    public void startAnimator(){
+    public void startAnimator() {
         mRunnable.run();
     }
 
-    public void stopAnimator(){
+    public void stopAnimator() {
         Iterator<ValueAnimator> iterator = animatorList.iterator();
         while (iterator.hasNext()) {
             ValueAnimator valueAnimator = iterator.next();
@@ -157,16 +158,16 @@ public class LoadingView extends View {
             if (animatorList.size() == circleNum) {
                 removeCallbacks(mRunnable);
             } else {
-                postDelayed(mRunnable, animationDur / circleNum);//按先后顺序添加动画
+                postDelayed(mRunnable, animationDur / (long) circleNum);//按先后顺序添加动画
             }
         }
     };
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        switch (event.getAction()){
+        switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
-                if (animatorList.isEmpty()){
+                if (animatorList.isEmpty()) {
                     startAnimator();
                 } else {
                     stopAnimator();
