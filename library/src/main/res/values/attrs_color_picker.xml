@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ColorBarView">
+        <!-- 显示指示线-->
+        <attr name="showLineIndicator" format="boolean" />
+        <!-- 显示指示箭头-->
+        <attr name="showArrowIndicator" format="boolean" />
+    </declare-styleable>
+</resources>
